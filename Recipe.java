@@ -56,9 +56,9 @@ public class Recipe {
   // toString method to return recipe in string
   public String toString() {
     String s = ingre.toString();
-    s.replace("<front of queue>", "<html>");
-    s.replace("\n", "<br>");
-    s.replace("<rear of queue>", "</html>");
+//    s.replaceAll("<front of queue>", "<html>");
+//    s.replaceAll("\n", "<br>");
+//    s.replaceAll("<rear of queue>", "</html>");
     return s;
   }
   
