@@ -1,0 +1,8 @@
+Cocoa cocoa.jpeg cocoa.jepg
+Milk milk.jpeg milk.jpeg
+Vanilla vanilla.jpeg vanilla.jpeg
+Marshmallow marshmallow.jpeg marshmallow.jpeg
+Marshmallow marshmallow.jpeg marshmallow.jpeg
+Whipped-Cream whippedCream.jpeg whippedCream.jpeg
+PepperMint peppermint.jpeg peppermint.jpeg
+* hotChocolate.jpeg

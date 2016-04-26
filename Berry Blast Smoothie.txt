@@ -1,0 +1,9 @@
+Strawberry strawberry.jpeg strawberry.jpeg
+Blueberry blueberry.jpeg blueberry.jpeg
+Raspberry raspberry.jpeg raspberry.jpeg
+Blackberry blackberry.jpeg blackberry.jpeg
+Cherry cherry.jpeg cherry.jpeg
+Milk milk.jpeg milk.jpeg
+Yogurt yogurt.jpeg yogurt.jpeg
+Ice ice.jpeg ice.jpeg
+* smoothie.jpeg

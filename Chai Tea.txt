@@ -1,0 +1,10 @@
+Ginger ginger.jpeg ginger.jpeg
+Cinnamon cinnamonStick.jpeg cinnamonStick.jpeg
+Peppercorn cinnamonStick.jpeg cinnamonStick.jpeg
+Cloves wholeCloves.jpeg wholeCloves.jpeg
+Cardamon cardamom.jpeg cardamom.jpeg
+Water water.jpeg water.jpeg
+TeaBag teabag.jpeg teabag.jpeg
+Milk milk.jpeg milk.jpeg
+Sugar sugar.jpeg sugar.jpeg
+* chaiTea.jpeg
