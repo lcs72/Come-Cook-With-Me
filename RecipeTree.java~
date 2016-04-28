@@ -1,0 +1,94 @@
+/** Cynthia Chen and Laura Scanlon
+  * 4/24/16
+  * CS 230 Final Project 
+  * RecipeTree Class **/
+
+import java.util.Scanner;  // for reading from keyboard for testing
+import javafoundations.*; // for the LinkedBinaryTree and all
+
+public class RecipeTree {
+  
+  private LinkedBinaryTree<String> theTree;
+  private LinkedBinaryTree<String> current;
+  
+  // sets up 'expert' database
+  public RecipeTree(){
+    String a1 = "Option 1: Baking     Option 2: Drink";
+    String b1 = "Option 1: Sweet     Option 2: Savory";
+    String b2 = "Option 1: Hot     Option 2: Cold";
+    String c1 = "Option 1: Chocolate Chip Cookies     Option 2: Apple Pie";
+    String c2 = "Option 1: Banana Bread     Option 2: Bacon Wrapped Shrimp";
+    String c3 = "Option 1: Hot Chocolate     Option 2: Chai Tea";
+    String c4 = "Option 1: Berry Blast Smoothie     Option 2: Chocolate Milkshake";
+    String d1 = "Chocolate Chip Cookies";
+    String d2 = "Apple Pie";
+    String d3 = "Banana Bread";
+    String d4 = "Bacon Wrapped Shrimp";
+    String d5= "Hot Chocolate";
+    String d6 = "Chai Tea";
+    String d7 = "Berry Blash Smoothie";
+    String d8 = "Chocolate Milkshake";
+    
+    //create the LinkedBinaryTree
+    LinkedBinaryTree<String> recipe1 = new LinkedBinaryTree<String>(d1);
+    LinkedBinaryTree<String> recipe2 = new LinkedBinaryTree<String>(d2);
+    LinkedBinaryTree<String> recipe3 = new LinkedBinaryTree<String>(d3);    
+    LinkedBinaryTree<String> recipe4 = new LinkedBinaryTree<String>(d4);
+    LinkedBinaryTree<String> recipe5 = new LinkedBinaryTree<String>(d5);
+    LinkedBinaryTree<String> recipe6 = new LinkedBinaryTree<String>(d6);
+    LinkedBinaryTree<String> recipe7 = new LinkedBinaryTree<String>(d7);
+    LinkedBinaryTree<String> recipe8 = new LinkedBinaryTree<String>(d8);
+    
+    LinkedBinaryTree<String> choice1 = new LinkedBinaryTree<String>(c1, recipe1, recipe2);
+    LinkedBinaryTree<String> choice2 = new LinkedBinaryTree<String>(c2, recipe3, recipe4);
+    LinkedBinaryTree<String> choice3 = new LinkedBinaryTree<String>(c3, recipe5, recipe6);    
+    LinkedBinaryTree<String> choice4 = new LinkedBinaryTree<String>(c4, recipe7, recipe8);
+    
+    LinkedBinaryTree<String> b2 = new LinkedBinaryTree<String>(e2, c4, c5);
+    LinkedBinaryTree<String> b3 = new LinkedBinaryTree<String>(e3, c6, c7);
+    
+    theTree = new LinkedBinaryTree<String>(e1, b2, b3);
+    
+    
+  }
+  
+  
+  //define any other methods
+  
+  public LinkedBinaryTree<String> getTree() {
+    return theTree;
+  }
+  
+  public String toString() {
+    return theTree.toString();
+  }
+  
+  public LinkedBinaryTree<String> answerQuestion(LinkedBinaryTree<String> original, Scanner sc) {
+    if (sc.nextLine().equalsIgnoreCase("N")) {
+      return original.getLeft();
+    } 
+    return original.getRight();
+    
+  }
+  
+  //add a main()
+  public static void main (String[] args) {
+    AnimalExpert ae = new AnimalExpert();
+    
+    Scanner sc = new Scanner(System.in);
+    LinkedBinaryTree<String> current = ae.getTree();
+    
+    while (!current.isEmpty()) {
+      System.out.println(current.getRootElement());
+      if (current.size() > 1) 
+        current = ae.answerQuestion(current, sc);
+      else
+        break;
+    } 
+    sc.close();
+    
+    
+  }
+  
+} // AnimalExpert class
+

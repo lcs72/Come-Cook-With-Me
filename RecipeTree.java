@@ -103,7 +103,11 @@ public class RecipeTree {
           foodPic = scan.next();
         }
         else{
+<<<<<<< HEAD
+          rqueue.enqueue(new Ingredient(s, scan.next(), scan.next()));
+=======
           rqueue.enqueue(new Ingredient(s, "pictures/" + scan.next(), "pictures/" + scan.next()));
+>>>>>>> Cynthia's-branch
         }
       }
       scan.close();
@@ -124,7 +128,11 @@ public class RecipeTree {
     System.out.println(rt.getCurrent());
     System.out.println(rt.answerQuestion("left"));
     System.out.println(rt.getCurrent());
+<<<<<<< HEAD
+    System.out.println(rt.answerQuestion("left"));
+=======
     System.out.println(rt.answerQuestion("right"));
+>>>>>>> Cynthia's-branch
     System.out.println(rt.getCurrent());
   
     //System.out.println(createRecipe("Chocolate Chip Cookie"));
